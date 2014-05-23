@@ -2379,11 +2379,19 @@ namespace boost { namespace numeric { namespace ublas {
             return r1_.size ();
         }
         BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return r1_.size ();
+        }
+        BOOST_UBLAS_INLINE
         size_type start2() const {
             return r2_.start ();
         }
         BOOST_UBLAS_INLINE
         size_type size2 () const {
+            return r2_.size ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
             return r2_.size ();
         }
 
@@ -3296,6 +3304,14 @@ namespace boost { namespace numeric { namespace ublas {
         }
         BOOST_UBLAS_INLINE
         size_type size2 () const {
+            return s2_.size ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return s1_.size ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
             return s2_.size ();
         }
 
@@ -4231,6 +4247,15 @@ namespace boost { namespace numeric { namespace ublas {
         size_type size2 () const {
             return ia2_.size ();
         }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return ia1_.size ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
+            return ia2_.size ();
+        }
+
         BOOST_UBLAS_INLINE
         const indirect_array_type &indirect1 () const {
             return ia1_;

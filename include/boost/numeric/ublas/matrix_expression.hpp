@@ -58,6 +58,14 @@ namespace boost { namespace numeric { namespace ublas {
         size_type size2 () const {
             return e_.size2 ();
         }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return e_.size1 ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
+            return e_.size2 ();
+        }
 
     public:
         // Expression accessors - const correct
@@ -307,6 +315,14 @@ namespace boost { namespace numeric { namespace ublas {
         }
         BOOST_UBLAS_INLINE
         size_type size2 () const { 
+            return e2_.size ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return e1_.size ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
             return e2_.size ();
         }
 
@@ -818,6 +834,14 @@ namespace boost { namespace numeric { namespace ublas {
         size_type size2 () const {
             return e_.size2 ();
         }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return e_.size1 ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
+            return e_.size2 ();
+        }
 
     public:
         // Expression accessors
@@ -1276,6 +1300,14 @@ namespace boost { namespace numeric { namespace ublas {
         size_type size2 () const {
             return e_.size1 ();
         }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return e_.size2 ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
+            return e_.size1 ();
+        }
 
     public:
         // Expression accessors
@@ -1713,6 +1745,14 @@ namespace boost { namespace numeric { namespace ublas {
         }
         BOOST_UBLAS_INLINE
         size_type size2 () const {
+            return BOOST_UBLAS_SAME (e1_.size2 (), e2_.size2 ());
+        }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return BOOST_UBLAS_SAME (e1_.size1 (), e2_.size1 ());
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
             return BOOST_UBLAS_SAME (e1_.size2 (), e2_.size2 ());
         }
 
@@ -2556,6 +2596,14 @@ namespace boost { namespace numeric { namespace ublas {
         size_type size2 () const {
             return e2_.size2 ();
         }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return e2_.size1 ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
+            return e2_.size2 ();
+        }
 
     public:
         // Element access
@@ -2989,6 +3037,14 @@ namespace boost { namespace numeric { namespace ublas {
         }
         BOOST_UBLAS_INLINE
         size_type size2 () const {
+            return e1_.size2 ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return e1_.size1 ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
             return e1_.size2 ();
         }
 
@@ -4218,6 +4274,14 @@ namespace boost { namespace numeric { namespace ublas {
         }
         BOOST_UBLAS_INLINE
         size_type size2 () const {
+            return e2_.size2 ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return e1_.size1 ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
             return e2_.size2 ();
         }
 

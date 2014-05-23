@@ -178,12 +178,20 @@ namespace boost { namespace numeric {
         size_type size1 () const {
             return size1_;
         }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return size1_;
+        }
 
 	  /** Return the number of colums of the matrix
 	   * You can also use the free size<>() function in operation/size.hpp as size<2>(m) where m is a matrix
 	   */
         BOOST_UBLAS_INLINE
         size_type size2 () const {
+            return size2_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
             return size2_;
         }
 
@@ -1252,6 +1260,14 @@ namespace boost { namespace numeric {
         size_type size2 () const { 
             return size2_;
         }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return size1_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
+            return size2_;
+        }
 
         // Storage accessors
         BOOST_UBLAS_INLINE
@@ -2226,7 +2242,15 @@ namespace boost { namespace numeric {
         size_type size2 () const {
             return size2_;
         }
-
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return size1_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
+            return size2_;
+        }
+            
         // Resizing
         BOOST_UBLAS_INLINE
         void resize (size_type size, bool preserve = true) {
@@ -2611,6 +2635,14 @@ namespace boost { namespace numeric {
         }
         BOOST_UBLAS_INLINE
         size_type size2 () const {
+            return size2_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return size1_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
             return size2_;
         }
 
@@ -3025,6 +3057,14 @@ namespace boost { namespace numeric {
         size_type size2 () const {
             return size2_;
         }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return size1_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
+            return size2_;
+        }
 
         // Resizing
         BOOST_UBLAS_INLINE
@@ -3437,7 +3477,7 @@ namespace boost { namespace numeric {
 
     /** \brief An array based matrix class which size is defined at type specification or object instanciation
      *
-     * This matrix is directly based on a predefined C-style arry of data, thus providing the fastest
+     * This matrix is directly based on a predefined C-style array of data, thus providing the fastest
      * implementation possible. The constraint is that dimensions of the matrix must be specified at 
      * the instanciation or the type specification. 
      *
@@ -3514,6 +3554,15 @@ namespace boost { namespace numeric {
         size_type size2 () const {
             return size2_;
         }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return size1_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
+            return size2_;
+        }
+            
         BOOST_UBLAS_INLINE
         const_pointer data () const {
             return reinterpret_cast<const_pointer> (data_);

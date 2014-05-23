@@ -328,6 +328,14 @@ namespace boost { namespace numeric { namespace ublas {
             return size2_;
         }
         BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return size1_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
+            return size2_;
+        }
+        BOOST_UBLAS_INLINE
         size_type nnz_capacity () const {
             return detail::map_capacity (data ());
         }
@@ -1398,6 +1406,14 @@ namespace boost { namespace numeric { namespace ublas {
         }
         BOOST_UBLAS_INLINE
         size_type size2 () const {
+            return size2_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return size1_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
             return size2_;
         }
         BOOST_UBLAS_INLINE
@@ -2727,6 +2743,14 @@ namespace boost { namespace numeric { namespace ublas {
         }
         BOOST_UBLAS_INLINE
         size_type size2 () const {
+            return size2_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return size1_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
             return size2_;
         }
         BOOST_UBLAS_INLINE
@@ -4078,6 +4102,14 @@ namespace boost { namespace numeric { namespace ublas {
         }
         BOOST_UBLAS_INLINE
         size_type size2 () const {
+            return size2_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return size1_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
             return size2_;
         }
         BOOST_UBLAS_INLINE

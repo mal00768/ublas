@@ -314,6 +314,14 @@ namespace boost { namespace numeric { namespace ublas {
         size_type size2 () const {
             return size_;
         }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return size_;
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
+            return size_;
+        }
 
         // Storage accessors
         BOOST_UBLAS_INLINE
@@ -1211,6 +1219,14 @@ namespace boost { namespace numeric { namespace ublas {
         }
         BOOST_UBLAS_INLINE
         size_type size2 () const {
+            return data_.size2 ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type rows () const {
+            return data_.size1 ();
+        }
+        BOOST_UBLAS_INLINE
+        size_type cols () const {
             return data_.size2 ();
         }
 
